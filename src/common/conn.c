@@ -44,7 +44,7 @@ int get_connection(const char *host, const char *port) {
         if(sock < 0)
                 ERROR("socket", socket_error);
 
-        if(getaddrinfo("127.0.0.1", "7777", 
+        if(getaddrinfo(host, port, 
                 &(struct addrinfo){
                         .ai_family = AF_INET,
                         .ai_socktype = SOCK_STREAM,
