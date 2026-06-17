@@ -6,3 +6,4 @@ CMakeFiles
 CMakeLists.txt
 compile_commands.json
 Makefile
+.cache
