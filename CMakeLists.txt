@@ -13,6 +13,7 @@ add_executable(cc ${cc} ${common})
 add_executable(backdoor ${backdoor} ${common})
 
 target_compile_options(backdoor PRIVATE "-static" "-g")
+target_link_options(backdoor PRIVATE "--static")
 target_compile_options(cc PRIVATE "-g")
 
 target_include_directories(cc PRIVATE "include")
